@@ -1,6 +1,6 @@
 const logotext = "Avery";
 const meta = {
-  title: "John Doe",
+  title: "Avery's Portfolio",
   description:
     "I'm Avery Truax. I am a student at Georgia Tech studying Aerospace Engineering. I am interested in computational fluid dynamics and aerodynamics.",
 };
@@ -84,49 +84,28 @@ const interests = [
 
 const dataportfolio = [
   {
-    img: "https://picsum.photos/400/?grayscale",
-    description: "Project Description goes here.",
-    link: "#",
+    projectTitle: "Takeoff Distance Simulation",
+    description:
+      "During This project, I wrote a script that would intake certain parameters about a plane such as the thrust it produces, some of the platform details like wingspan and AR, and the weight of the payload and structure based on historical data. The script would then iterate through starting incidence angles that the plane takes off at and output a plot showing what sort of takeoff distances you would be getting from certain incidence angles..",
+    img: "./takeoff-graph.png",
   },
   {
-    img: "https://picsum.photos/400/800/?grayscale",
-    description: "Project Description goes here.",
-    link: "#",
+    projectTitle: "Landing Gear Design",
+    description:
+      "During this project, I was tasked with making the landing gear for our new plane configuration. The gear needed redesign because of the bottom geometry of the planform changing. I designed the gear with the load path in mind, with the goal of distributing the load as much as possible throughout the bottom of the bulkheads in the fuselage. The Mounts to the Landing gear were also a challenge as the mounting points were at a point of curvature and needed to allow space between the mounts and the gear so that we could strengthen the Gear. Afterwards The CAD was finished, the landing gear was manufactured using a 3d printed mold and composite layup around to add bending stiffness to the structure.",
+    img: "./takeoff-graph.png",
   },
   {
-    img: "https://picsum.photos/400/?grayscale",
-    description: "Project Description goes here.",
-    link: "#",
+    projectTitle: "Control Surface Sizing",
+    description:
+      "During this project. I was tasked with appropriately sizing the Vertical Stabilizer for an aircraft that we had to develop in less than two weeks. I iterated between two different design points, those being one with one vertical stabilizer, and the other being one with two outboard vertical stabilizers. The choice was made to go with one as it would save structural weight in the final design and we would get the added bonus of having the control surface being blown for additional yaw authority. Once appropriately sized, a basic vstab was cadded so that we could run CFD to see where the prop wash was hitting the stabilizer. We analyzed this specific point so that we could see if we would be getting any sort of passive stability from the rudder. We ended up making the Vstab tall enough so that it gave us enough passivle stability to complete the mission and the initial design flew successfully. During this I also built a calculator that would take geometric parameters that we wanted for the Vstab and output coordinates that could then be put into the AVL file used to analyze the aircraft.",
+    img: "takeoff-graph.png",
   },
   {
-    img: "https://picsum.photos/400/600/?grayscale",
-    description: "Project Description goes here.",
-    link: "#",
-  },
-  {
-    img: "https://picsum.photos/400/300/?grayscale",
-    description: "Project Description goes here.",
-    link: "#",
-  },
-  {
-    img: "https://picsum.photos/400/700/?grayscale",
-    description: "Project Description goes here.",
-    link: "#",
-  },
-  {
-    img: "https://picsum.photos/400/700/?grayscale",
-    description: "Project Description goes here.",
-    link: "#",
-  },
-  {
-    img: "https://picsum.photos/400/700/?grayscale",
-    description: "Project Description goes here.",
-    link: "#",
-  },
-  {
-    img: "https://picsum.photos/400/700/?grayscale",
-    description: "Project Description goes here.",
-    link: "#",
+    projectTitle: "Planform Geometry Optimization",
+    description:
+      "In this project, we used results that we obtained from running a neural network of 14 design parameters to create 10,000 different design points for our plane. We then selected the parameters that would suit the performance of our aircraft the best and I parametrized them in a Python wrapper that would interface with an analysis software called VORSTAB. I would then collect data on the performance of the aircraft and iterate through different design points that we wanted to hit to see what kind of different results we would get for our aircraft. It was through this analysis as well as CFD that was run later that we chose the optimal design point for our aircraft..",
+    img: "takeoff-graph.png",
   },
 ];
 

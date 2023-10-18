@@ -1,6 +1,6 @@
 import React from "react";
-import { Route, Routes} from "react-router-dom";
-import withRouter from "../hooks/withRouter"
+import { Route, Routes } from "react-router-dom";
+import withRouter from "../hooks/withRouter";
 import { Home } from "../pages/home";
 import { Portfolio } from "../pages/portfolio";
 import { ContactUs } from "../pages/contact";
@@ -16,15 +16,16 @@ const AnimatedRoutes = withRouter(({ location }) => (
         enter: 400,
         exit: 400,
       }}
-      classNames="page"
+      classNames='page'
       unmountOnExit
     >
       <Routes location={location}>
-        <Route exact path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/contact" element={<ContactUs />} />
-        <Route path="*" element={<Home />} />
+        <Route exact path='/' element={<Home />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/portfolio' element={<Portfolio />} />
+        <Route path='/contact' element={<ContactUs />} />
+        <Route path='/contact' element={<ContactUs />} />
+        <Route path='*' element={<Home />} />
       </Routes>
     </CSSTransition>
   </TransitionGroup>
@@ -32,7 +33,7 @@ const AnimatedRoutes = withRouter(({ location }) => (
 
 function AppRoutes() {
   return (
-    <div className="s_c">
+    <div className='s_c'>
       <AnimatedRoutes />
       <Socialicons />
     </div>

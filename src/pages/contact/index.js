@@ -68,18 +68,18 @@ export const ContactUs = () => {
     <HelmetProvider>
       <Container>
         <Helmet>
-          <meta charSet="utf-8" />
+          <meta charSet='utf-8' />
           <title>{meta.title} | Contact</title>
-          <meta name="description" content={meta.description} />
+          <meta name='description' content={meta.description} />
         </Helmet>
-        <Row className="mb-5 mt-3 pt-md-3">
-          <Col lg="8">
-            <h1 className="display-4 mb-4">Contact Me</h1>
-            <hr className="t_border my-4 ml-0 text-left" />
+        <Row className='mb-5 mt-3 pt-md-3'>
+          <Col lg='8'>
+            <h1 className='display-4 mb-4'>Contact Me</h1>
+            <hr className='t_border my-4 ml-0 text-left' />
           </Col>
         </Row>
-        <Row className="sec_sp">
-          <Col lg="12">
+        <Row className='sec_sp'>
+          <Col lg='12'>
             <Alert
               //show={formData.show}
               variant={formData.variant}
@@ -89,11 +89,11 @@ export const ContactUs = () => {
               onClose={() => setFormdata({ show: false })}
               dismissible
             >
-              <p className="my-0">{formData.alertmessage}</p>
+              <p className='my-0'>{formData.alertmessage}</p>
             </Alert>
           </Col>
-          <Col lg="5" className="mb-5">
-            <h3 className="color_sec py-4">Get in touch</h3>
+          <Col lg='5' className='mb-5'>
+            <h3 className='color_sec py-4'>Get in touch</h3>
             <address>
               <strong>Email:</strong>{" "}
               <a href={`mailto:${contactConfig.YOUR_EMAIL}`}>
@@ -111,28 +111,28 @@ export const ContactUs = () => {
             </address>
             <p>{contactConfig.description}</p>
           </Col>
-          <Col lg="7" className="d-flex align-items-center">
-            <form onSubmit={handleSubmit} className="contact__form w-100">
+          <Col lg='7' className='d-flex align-items-center'>
+            <form onSubmit={handleSubmit} className='contact__form w-100'>
               <Row>
-                <Col lg="6" className="form-group">
+                <Col lg='6' className='form-group'>
                   <input
-                    className="form-control"
-                    id="name"
-                    name="name"
-                    placeholder="Name"
+                    className='form-control'
+                    id='name'
+                    name='name'
+                    placeholder='Name'
                     value={formData.name || ""}
-                    type="text"
+                    type='text'
                     required
                     onChange={handleChange}
                   />
                 </Col>
-                <Col lg="6" className="form-group">
+                <Col lg='6' className='form-group'>
                   <input
-                    className="form-control rounded-0"
-                    id="email"
-                    name="email"
-                    placeholder="Email"
-                    type="email"
+                    className='form-control rounded-0'
+                    id='email'
+                    name='email'
+                    placeholder='Email'
+                    type='email'
                     value={formData.email || ""}
                     required
                     onChange={handleChange}
@@ -140,19 +140,19 @@ export const ContactUs = () => {
                 </Col>
               </Row>
               <textarea
-                className="form-control rounded-0"
-                id="message"
-                name="message"
-                placeholder="Message"
-                rows="5"
+                className='form-control rounded-0'
+                id='message'
+                name='message'
+                placeholder='Message'
+                rows='5'
                 value={formData.message}
                 onChange={handleChange}
                 required
               ></textarea>
               <br />
               <Row>
-                <Col lg="12" className="form-group">
-                  <button className="btn ac_btn" type="submit">
+                <Col lg='12' className='form-group'>
+                  <button className='btn ac_btn' type='submit'>
                     {formData.loading ? "Sending..." : "Send"}
                   </button>
                 </Col>
