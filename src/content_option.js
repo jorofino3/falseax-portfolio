@@ -23,7 +23,7 @@ const introdata = {
     first: "I am a Student at Georgia Tech",
     second: "I am the Co-Founder of GTSC",
     third: "I am a Team Lead at Design, Build, Fly",
-    fourth: "Lose in Smash to Joey allll the time ",
+    fourth: "I NNNNEVVVVERRRRRR Lose in Smash to Joey",
   },
   description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum",
