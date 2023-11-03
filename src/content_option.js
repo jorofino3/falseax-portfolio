@@ -100,7 +100,6 @@ const dataportfolio = [
     description:
       "During This project, I wrote a script that would intake certain parameters about a plane such as the thrust it produces, some of the platform details like wingspan and AR, and the weight of the payload and structure based on historical data. The script would then iterate through starting incidence angles that the plane takes off at and output a plot showing what sort of takeoff distances you would be getting from certain incidence angles.",
     images: [takeOffGraph, takeOffNumbers],
-    // images: [takeOffGraph, takeOffNumbers, takeOffCode1, takeOffCode2] looks wack
   },
   {
     projectTitle: "Landing Gear Design",
@@ -143,11 +142,11 @@ const contactConfig = {
   YOUR_FONE: "(555)123-4567",
   description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula eu nunc et sollicitudin. Cras pulvinar, nisi at imperdiet pharetra. ",
-  // creat an emailjs.com account
-  // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
-  YOUR_SERVICE_ID: "service_id",
-  YOUR_TEMPLATE_ID: "template_id",
-  YOUR_USER_ID: "user_id",
+  alertmessage: "Success! Thank you for the email :)",
+  //DO NOT EDIT THESE ID'S
+  YOUR_SERVICE_ID: "service_qhq4gkn",
+  YOUR_TEMPLATE_ID: "template_0ca6mvo",
+  YOUR_USER_ID: "xRQNc37JBc03rkqve",
 };
 
 const socialprofils = {
