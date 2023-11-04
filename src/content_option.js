@@ -8,6 +8,10 @@ import platformGraph from "./assets/images/platform-graph.png";
 import controlEntire from "./assets/images/control-entire.jpg";
 import controlDark from "./assets/images/control-dark.png";
 import controlGraph from "./assets/images/control-graph.jpg";
+import Tail1 from "./assets/images/Tail1.JPG";
+import Tail2 from "./assets/images/Tail2.JPG";
+import Tail3 from "./assets/images/Tail3.JPG";
+import VSP from "./assets/images/VSP.png";
 
 const logotext = "Avery";
 const meta = {
@@ -23,32 +27,38 @@ const introdata = {
     first: "I am a Student at Georgia Tech",
     second: "I am the Co-Founder of GTSC",
     third: "I am a Team Lead at Design, Build, Fly",
-    fourth: "Lose in Smash to Joey allll the time ",
+    fourth: "I love playing Guitar and Soccer",
+    fifth: "I enjoy learning about all things in my free time",
   },
   description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum",
+    " I'm an Aerospace Engineering major at the Georgia Institute of Technology, where I've honed my passion for aerospace engineering over the past year. My academic journey includes three years of intensive mathematical study at the University of North Georgia, further fueling my analytical skills. \r Welcome To My Portfolio",
 };
 
 const dataabout = {
-  title: "abit about my self",
+  title: "A bit about my self",
   aboutme:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis dolor id ligula semper elementum feugiat pretium nulla. Nunc non commodo dolor. Nunc mollis dignissim facilisis. Morbi ut magna ultricies.",
+    "Currently, I wear multiple hats: I lead the Design Build Fly team at Georgia Tech, where I work with a team to dive into the realm of conceptual design, flight test engineering, manufacturing, and many other disciplines. Additionally, as a Co-founder and Aerodynamics Team Lead for the Georgia Tech Supersonics Club, I have the privilege of organizing a dedicated group of engineers and enthusiasts. Here I am developing skills in the realms of Performance Analysis, Controls, Structures, and much more.  \n Beyond the world of aerospace, I find joy in my simple interests. You might find me playing my guitar, navigating disc golf courses, or perfecting my pickleball game with friends and family.",
 };
 const worktimeline = [
   {
-    jobtitle: "Title 1",
+    jobtitle: "Aerodynamics Team Lead",
     where: "Georgia Tech",
-    date: "2020 - 2024",
+    date: "August 2023 - Present",
   },
   {
-    jobtitle: "Title 2",
+    jobtitle: "Micro Class Team Lead",
     where: "Georgia Tech",
-    date: "2020 - 2024",
+    date: "August 2023 - Present",
   },
   {
-    jobtitle: "Title 3",
-    where: "Georgia Tech",
-    date: "2020 - 2024",
+    jobtitle: "Supplemental Instructor",
+    where: "University of North Georgia",
+    date: "Jan 2020 - May 2020",
+  },
+  {
+    jobtitle: "Lead Instructor",
+    where: "Mathnasium",
+    date: "June 2020 - July 2021",
   },
 ];
 
@@ -56,24 +66,32 @@ const skills = [
   // name: name of skill
   // value: percentage of confidence in skill
   {
-    name: "Skill 1",
-    value: 90,
+    name: "AVL",
+    value: 95,
   },
   {
-    name: "Skill 2",
+    name: "Matlab",
+    value: 75,
+  },
+  {
+    name: "SolidWorks",
     value: 85,
   },
   {
-    name: "Skill 3",
-    value: 80,
-  },
-  {
-    name: "Skill 4",
+    name: "Python",
     value: 60,
   },
   {
-    name: "Skill 5",
-    value: 85,
+    name: "VORSTAB",
+    value: 80,
+  },
+  {
+    name: "ANSYS Fluent",
+    value: 65,
+  },
+  {
+    name: "Open VSP",
+    value: 90,
   },
 ];
 
@@ -81,18 +99,23 @@ const interests = [
   {
     title: "Computational Fluid Dynamics",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+      "I am Currently involved in undergraduate research and coursework pertaining to this field. I enjoy the whole process of creating meshes that appropriately capture the physics of the given scenario as well as interpreting and validating results.",
   },
   {
-    title: "Planez",
+    title: "Aerodynamic / Performance Analysis",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+      "I love creating wacky aircraft configurations that have unique aerodynamic characteristics and analyzing their performance traits before manufacturing ever begins.",
   },
   {
-    title: "Lila",
+    title: "Control Systems",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+      "I am new to this realm of Aerospace Engineering, but I thoroughly enjoy watching how mathematical systems translate to real life phenomenons and how we can predict the behavior of complex dynamic systems using different mathematical methods \n I hope to grow my knowledge in this field via future projects and courses.",
   },
+  {
+    title: "Flight Test Engineering",
+    description:
+      "I love conducting performance tests on aircrafts. Having a tangible objective for the aircraft to deliver on and planning out tests to determine if the aircraft is capable is something that I love doing and find myself putting into practice frequently at DBF",
+  }
 ];
 const dataportfolio = [
   {
@@ -118,8 +141,20 @@ const dataportfolio = [
   {
     projectTitle: "Control Surface Sizing",
     description:
-      "During this project. I was tasked with appropriately sizing the Vertical Stabilizer for an aircraft that we had to develop in less than two weeks. I iterated between two different design points, those being one with one vertical stabilizer, and the other being one with two outboard vertical stabilizers. The choice was made to go with one as it would save structural weight in the final design and we would get the added bonus of having the control surface being blown for additional yaw authority. Once appropriately sized, a basic vstab was cadded so that we could run CFD to see where the prop wash was hitting the stabilizer. We analyzed this specific point so that we could see if we would be getting any sort of passive stability from the rudder. We ended up making the Vstab tall enough so that it gave us enough passivle stability to complete the mission and the initial design flew successfully. During this I also built a calculator that would take geometric parameters that we wanted for the Vstab and output coordinates that could then be put into the AVL file used to analyze the aircraft.",
+      "During this project. I was tasked with appropriately sizing the Vertical Stabilizer for an aircraft that we had to develop in less than two weeks. I iterated between two different design points, those being one with one vertical stabilizer, and the other being one with two outboard vertical stabilizers. The choice was made to go with one as it would save structural weight in the final design and we would get the added bonus of having the control surface being blown for additional yaw authority. Once appropriately sized, a basic Vstab was Cadded so that we could run CFD to see where the prop wash was hitting the stabilizer. We analyzed this specific point so that we could see if we would be getting any sort of passive stability from the rudder. We ended up making the Vstab tall enough so that it gave us enough passive stability to complete the mission and the initial design flew successfully. During this I also built a calculator that would take geometric parameters that we wanted for the Vstab and output coordinates that could then be put into the AVL file used to analyze the aircraft.",
     images: [controlEntire, controlDark, controlGraph],
+  },
+  {
+    projectTitle: "Monoplane Tail",
+    description:
+      "During this project, I used a python script that interfaced with AVL to quickly run through and analyze different configurations for a monoplane tail. The configuration that we were looking at was extremely unconventional and analyzing it was a challenge in and of itself. We needed to keep the stability of the plane within a certain range, but also keep in mind the effects of the large amount of downwash we would be getting from our wing. After correctly sizing the tail and confirming the interface of the tail with other people on the team, I developed the tail and the means of load transference between the tail and the fuselage. After the concepts were laid out I created a fully Parametrized CAD of the tail configuration in a week. This allowed us to change important dimensions that drove the construction of the tail itself such as the offset distance between the leading edge of the VStab and the torsion box. While I was making the tail I had to keep in mind our manufacturing process and also integrate tolerances into the drawings and dimensions so that we accounted for the width of the laser cutting the surfaces and also so we maintained good contact between the pieces during construction.",
+    images: [Tail1, Tail2, Tail3],
+  },
+  {
+    projectTitle: "VSP onboarding",
+    description:
+      "During this project, I developed an introduction / tutorial to the aircraft modeling software known as OpenVSP. This 5000+ word tutorial goes through the basics of the software, some tips and tricks that make life easier when using it, some annoying features to avoid, and goes into depth on some of the analysis tools that the software employs. It also runs the user through the full process of building their own model from scratch. The goal of the tutorial was to train members that me and other team leads had brought on so that they could quickly portray their ideas to us. It also allowed underclassmen to get exposed to more advanced aerodynamics concepts through some ideas mentioned in the tutorial, as well as through trial and error.",
+    images: [VSP],
   },
 ];
 
@@ -168,3 +203,4 @@ export {
   socialprofils,
   logotext,
 };
+
