@@ -115,7 +115,7 @@ const interests = [
     title: "Flight Test Engineering",
     description:
       "I love conducting performance tests on aircrafts. Having a tangible objective for the aircraft to deliver on and planning out tests to determine if the aircraft is capable is something that I love doing and find myself putting into practice frequently at DBF",
-  }
+  },
 ];
 const dataportfolio = [
   {
@@ -180,9 +180,9 @@ const contactConfig = {
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula eu nunc et sollicitudin. Cras pulvinar, nisi at imperdiet pharetra. ",
   // creat an emailjs.com account
   // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
-  YOUR_SERVICE_ID: "service_id",
-  YOUR_TEMPLATE_ID: "template_id",
-  YOUR_USER_ID: "user_id",
+  YOUR_SERVICE_ID: "service_qhq4gkn",
+  YOUR_TEMPLATE_ID: "template_0ca6mvo",
+  YOUR_USER_ID: "xRQNc37JBc03rkqve",
 };
 
 const socialprofils = {
@@ -203,4 +203,3 @@ export {
   socialprofils,
   logotext,
 };
-
