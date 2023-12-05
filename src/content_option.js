@@ -12,6 +12,10 @@ import Tail1 from "./assets/images/Tail1.JPG";
 import Tail2 from "./assets/images/Tail2.JPG";
 import Tail3 from "./assets/images/Tail3.JPG";
 import VSP from "./assets/images/VSP.png";
+import CFD1 from "./assets/images/3d-cfd-1.jpg";
+import CFD2 from "./assets/images/3d-cfd-2.jpg";
+import CFD3 from "./assets/images/3d-cfd-3.jpg";
+import CFD4 from "./assets/images/3d-cfd-4.jpg";
 
 const logotext = "Avery";
 const meta = {
@@ -155,6 +159,14 @@ const dataportfolio = [
     description:
       "During this project, I developed an introduction / tutorial to the aircraft modeling software known as OpenVSP. This 5000+ word tutorial goes through the basics of the software, some tips and tricks that make life easier when using it, some annoying features to avoid, and goes into depth on some of the analysis tools that the software employs. It also runs the user through the full process of building their own model from scratch. The goal of the tutorial was to train members that me and other team leads had brought on so that they could quickly portray their ideas to us. It also allowed underclassmen to get exposed to more advanced aerodynamics concepts through some ideas mentioned in the tutorial, as well as through trial and error.",
     images: [VSP],
+    
+  },
+  {
+    projectTitle: "Transonic Wing Analysis",
+    description:
+      "In this CFD Case I compared Experimental data of an ONERA M6 aifoil at transonic speeds to experimental Data in order to validate the shock capturing that was occuring in the CFD solver.",
+    images: [CFD1, CFD2, CFD3, CFD4],
+    
   },
 ];
 
@@ -174,10 +186,10 @@ const frequentlyAskedQuestions = [
 ];
 
 const contactConfig = {
-  YOUR_EMAIL: "name@domain.com",
-  YOUR_FONE: "(555)123-4567",
+  YOUR_EMAIL: "atruax3@gatech.edu",
+  YOUR_FONE: "(678)-674-0882",
   description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula eu nunc et sollicitudin. Cras pulvinar, nisi at imperdiet pharetra. ",
+    "Feel free to reach out to me if you would like to get to know me more or ask about other projects I've worked on! ",
   // creat an emailjs.com account
   // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
   YOUR_SERVICE_ID: "service_qhq4gkn",
