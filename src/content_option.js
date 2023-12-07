@@ -16,6 +16,11 @@ import CFD1 from "./assets/images/3d-cfd-1.jpg";
 import CFD2 from "./assets/images/3d-cfd-2.jpg";
 import CFD3 from "./assets/images/3d-cfd-3.jpg";
 import CFD4 from "./assets/images/3d-cfd-4.jpg";
+import circuit1 from "./assets/images/Circuit1.jpg";
+import circuit2 from "./assets/images/Circuit2.png";
+import circuit3 from "./assets/images/Circuit3.png";
+import circuit4 from "./assets/images/Circuit4.png";
+import circuit5 from "./assets/images/Circuit5.jpg";
 
 const logotext = "Avery";
 const meta = {
@@ -167,6 +172,12 @@ const dataportfolio = [
       "In this CFD Case I compared Experimental data of an ONERA M6 aifoil at transonic speeds to experimental Data in order to validate the shock capturing that was occuring in the CFD solver.",
     images: [CFD1, CFD2, CFD3, CFD4],
     
+  },
+  {
+    projectTitle: "Heating System Physics Simulation",
+    description:
+      "In this project, I used finite differencing methods and physics based models to help me simulate a capacitor discharging into a steel rod. The goal of the simulation was to appropriately size and charge a capacitor such that when it discharged into the circuit, the steel rod reached a peak temperature of 500 degrees C at exactly 15 seconds after the circuit was closed. The whole project ended up taking a little over 200 lines of code to accomplish.",
+    images: [circuit1, circuit5, circuit4, circuit2, circuit3],    
   },
 ];
 
