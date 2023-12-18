@@ -21,6 +21,11 @@ import circuit2 from "./assets/images/Circuit2.png";
 import circuit3 from "./assets/images/Circuit3.png";
 import circuit4 from "./assets/images/Circuit4.png";
 import circuit5 from "./assets/images/Circuit5.jpg";
+import constraint1 from "./assets/images/constraint1.png";
+import constraint2 from "./assets/images/constraint2.png";
+import constraint3 from "./assets/images/constraint3.png";
+
+
 
 const logotext = "Avery";
 const meta = {
@@ -96,7 +101,7 @@ const skills = [
   },
   {
     name: "ANSYS Fluent",
-    value: 65,
+    value: 70,
   },
   {
     name: "Open VSP",
@@ -128,6 +133,37 @@ const interests = [
 ];
 const dataportfolio = [
   {
+    projectTitle: "Control Surface Sizing",
+    description:
+      "During this project. I was tasked with appropriately sizing the Vertical Stabilizer for an aircraft that we had to develop in less than two weeks. I iterated between two different design points, those being one with one vertical stabilizer, and the other being one with two outboard vertical stabilizers. The choice was made to go with one as it would save structural weight in the final design and we would get the added bonus of having the control surface being blown for additional yaw authority. Once appropriately sized, a basic Vstab was Cadded so that we could run CFD to see where the prop wash was hitting the stabilizer. We analyzed this specific point so that we could see if we would be getting any sort of passive stability from the rudder. We ended up making the Vstab tall enough so that it gave us enough passive stability to complete the mission and the initial design flew successfully. During this I also built a calculator that would take geometric parameters that we wanted for the Vstab and output coordinates that could then be put into the AVL file used to analyze the aircraft.",
+    images: [controlEntire, controlDark, controlGraph],
+  },
+  {
+    projectTitle: "Heating System Physics Simulation",
+    description:
+      "In this project, I used finite differencing methods and physics based models to help me simulate a capacitor discharging into a steel rod. The goal of the simulation was to appropriately size and charge a capacitor such that when it discharged into the circuit, the steel rod reached a peak temperature of 500 degrees C at exactly 15 seconds after the circuit was closed. The whole project ended up taking a little over 200 lines of code to accomplish.",
+    images: [circuit1, circuit5, circuit4, circuit2, circuit3],    
+  },
+  {
+    projectTitle: "Planform Geometry Optimization",
+    description:
+      "In this project, we used results that we obtained from running a neural network of 14 design parameters to create 10,000 different design points for our plane. We then selected the parameters that would suit the performance of our aircraft the best and I parametrized them in a Python wrapper that would interface with an analysis software called VORSTAB. I would then collect data on the performance of the aircraft and iterate through different design points that we wanted to hit to see what kind of different results we would get for our aircraft. It was through this analysis as well as CFD that was run later that we chose the optimal design point for our aircraft.",
+    images: [platformEntire, platformGraph],
+  },
+  {
+    projectTitle: "Performance Constraint analysis",
+    description:
+      "In this project, a constraint analysis calculator was made using energy based constraint analysis for a high performance RC aircraft with an EDF propulsion system. Several flight conditions were considered to help find a solution space that met our planes desired flight characteristics. Geometric Constraintes were implemented to find the portions of the solution space that we could operate in. Geometric constraints came from budget, time, and manufacturing constraints. After the desired solution space was found, an OML of the vehicle was developed to perform a weight and CG buildup for a preliminary configuration. This was then used to see if the Vehicle was plausable and if modifications needed to be made to accomodate the plane to the solution space.",
+    images: [constraint1, constraint2, constraint3], 
+  },
+  {
+    projectTitle: "Transonic Wing Analysis",
+    description:
+      "In this CFD Case I compared Experimental data of an ONERA M6 aifoil at transonic speeds to experimental Data in order to validate the shock capturing that was occuring in the CFD solver.",
+    images: [CFD1, CFD2, CFD3, CFD4],
+    
+  },
+  {
     projectTitle: "Takeoff Distance Simulation",
     description:
       "During This project, I wrote a script that would intake certain parameters about a plane such as the thrust it produces, some of the platform details like wingspan and AR, and the weight of the payload and structure based on historical data. The script would then iterate through starting incidence angles that the plane takes off at and output a plot showing what sort of takeoff distances you would be getting from certain incidence angles.",
@@ -140,19 +176,6 @@ const dataportfolio = [
       "During this project, I was tasked with making the landing gear for our new plane configuration. The gear needed redesign because of the bottom geometry of the planform changing. I designed the gear with the load path in mind, with the goal of distributing the load as much as possible throughout the bottom of the bulkheads in the fuselage. The Mounts to the Landing gear were also a challenge as the mounting points were at a point of curvature and needed to allow space between the mounts and the gear so that we could strengthen the Gear. Afterwards The CAD was finished, the landing gear was manufactured using a 3d printed mold and composite layup around to add bending stiffness to the structure.",
     images: [landingEntire, landingPart1, landingPart2],
   },
-
-  {
-    projectTitle: "Planform Geometry Optimization",
-    description:
-      "In this project, we used results that we obtained from running a neural network of 14 design parameters to create 10,000 different design points for our plane. We then selected the parameters that would suit the performance of our aircraft the best and I parametrized them in a Python wrapper that would interface with an analysis software called VORSTAB. I would then collect data on the performance of the aircraft and iterate through different design points that we wanted to hit to see what kind of different results we would get for our aircraft. It was through this analysis as well as CFD that was run later that we chose the optimal design point for our aircraft.",
-    images: [platformEntire, platformGraph],
-  },
-  {
-    projectTitle: "Control Surface Sizing",
-    description:
-      "During this project. I was tasked with appropriately sizing the Vertical Stabilizer for an aircraft that we had to develop in less than two weeks. I iterated between two different design points, those being one with one vertical stabilizer, and the other being one with two outboard vertical stabilizers. The choice was made to go with one as it would save structural weight in the final design and we would get the added bonus of having the control surface being blown for additional yaw authority. Once appropriately sized, a basic Vstab was Cadded so that we could run CFD to see where the prop wash was hitting the stabilizer. We analyzed this specific point so that we could see if we would be getting any sort of passive stability from the rudder. We ended up making the Vstab tall enough so that it gave us enough passive stability to complete the mission and the initial design flew successfully. During this I also built a calculator that would take geometric parameters that we wanted for the Vstab and output coordinates that could then be put into the AVL file used to analyze the aircraft.",
-    images: [controlEntire, controlDark, controlGraph],
-  },
   {
     projectTitle: "Monoplane Tail",
     description:
@@ -164,20 +187,6 @@ const dataportfolio = [
     description:
       "During this project, I developed an introduction / tutorial to the aircraft modeling software known as OpenVSP. This 5000+ word tutorial goes through the basics of the software, some tips and tricks that make life easier when using it, some annoying features to avoid, and goes into depth on some of the analysis tools that the software employs. It also runs the user through the full process of building their own model from scratch. The goal of the tutorial was to train members that me and other team leads had brought on so that they could quickly portray their ideas to us. It also allowed underclassmen to get exposed to more advanced aerodynamics concepts through some ideas mentioned in the tutorial, as well as through trial and error.",
     images: [VSP],
-    
-  },
-  {
-    projectTitle: "Transonic Wing Analysis",
-    description:
-      "In this CFD Case I compared Experimental data of an ONERA M6 aifoil at transonic speeds to experimental Data in order to validate the shock capturing that was occuring in the CFD solver.",
-    images: [CFD1, CFD2, CFD3, CFD4],
-    
-  },
-  {
-    projectTitle: "Heating System Physics Simulation",
-    description:
-      "In this project, I used finite differencing methods and physics based models to help me simulate a capacitor discharging into a steel rod. The goal of the simulation was to appropriately size and charge a capacitor such that when it discharged into the circuit, the steel rod reached a peak temperature of 500 degrees C at exactly 15 seconds after the circuit was closed. The whole project ended up taking a little over 200 lines of code to accomplish.",
-    images: [circuit1, circuit5, circuit4, circuit2, circuit3],    
   },
 ];
 
