@@ -24,6 +24,11 @@ import circuit5 from "./assets/images/Circuit5.jpg";
 import constraint1 from "./assets/images/constraint1.png";
 import constraint2 from "./assets/images/constraint2.png";
 import constraint3 from "./assets/images/constraint3.png";
+import vortex1 from "./assets/images/vortexshed1.png";
+import vortex2 from "./assets/images/vortexshed2.png";
+import vortex3 from "./assets/images/vortexshed3.png";
+import vortex4 from "./assets/images/vortexshed4.png";
+import vortex5 from "./assets/images/vortexshed5.png";
 
 
 
@@ -137,6 +142,12 @@ const dataportfolio = [
     description:
       "During this project. I was tasked with appropriately sizing the Vertical Stabilizer for an aircraft that we had to develop in less than two weeks. I iterated between two different design points, those being one with one vertical stabilizer, and the other being one with two outboard vertical stabilizers. The choice was made to go with one as it would save structural weight in the final design and we would get the added bonus of having the control surface being blown for additional yaw authority. Once appropriately sized, a basic Vstab was Cadded so that we could run CFD to see where the prop wash was hitting the stabilizer. We analyzed this specific point so that we could see if we would be getting any sort of passive stability from the rudder. We ended up making the Vstab tall enough so that it gave us enough passive stability to complete the mission and the initial design flew successfully. During this I also built a calculator that would take geometric parameters that we wanted for the Vstab and output coordinates that could then be put into the AVL file used to analyze the aircraft.",
     images: [controlEntire, controlDark, controlGraph],
+  },
+  {
+    projectTitle: "Vortex Shedding Simulation",
+    description:
+      "During This project, I ran a transient simulation of flow over a tandem cylinder arrangement. This was done using two different RANS modeling methods. The first being the k-omega turbulence model, and the second being the GEKO turbulence model. The GEKO model is a varation of the k-omega model with the freedom to change certain coefficients used in the equations. This allows for different levels of 'aggressiveness' in the prediction of flow seperation. The interesting thing about steady flow over the cylinders is that they reach a sort of steady state solution in the sense that the oscillation frequency of the vorticies being shed is near constant. This allows for the RMS values of lift coefficient and drag coefficient to be extracted. It also allows for a FFT to be performed on the system to get the characteristic frequency of the vortex shedding oscillations. With this frequency, the Strouhal number can be calculated as described below. These results were then compared with experimental data to analyze what aspects of the simulation could be improved to refine the validity of the results.",
+    images: [vortex1, vortex2, vortex3, vortex4, vortex5 ],
   },
   {
     projectTitle: "Heating System Physics Simulation",
