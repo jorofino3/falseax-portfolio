@@ -29,6 +29,11 @@ import vortex2 from "./assets/images/vortexshed2.png";
 import vortex3 from "./assets/images/vortexshed3.png";
 import vortex4 from "./assets/images/vortexshed4.png";
 import vortex5 from "./assets/images/vortexshed5.png";
+import doe0 from "./assets/images/doe_results_0.png";
+import doe1 from "./assets/images/doe_results_1.png";
+import doe2 from "./assets/images/doe_results_2.png";
+import doe3 from "./assets/images/doe_results_3.png";
+import doe4 from "./assets/images/doe_results_4.png";
 
 
 
@@ -46,7 +51,7 @@ const introdata = {
     first: "I am a Student at Georgia Tech",
     second: "I am the Co-Founder of GTSC",
     third: "I am a Team Lead at Design, Build, Fly",
-    fourth: "I love playing Guitar and Soccer",
+    fourth: "I love playing Guitar and Pickleball",
     fifth: "I enjoy learning about all things in my free time",
   },
   description:
@@ -68,6 +73,11 @@ const worktimeline = [
     jobtitle: "Micro Class Team Lead",
     where: "Georgia Tech",
     date: "August 2023 - Present",
+  },
+  {
+    jobtitle: "Research Engineer Intern",
+    where: "NASA Glenn Research Center",
+    date: "June 2024 - August 2024",
   },
   {
     jobtitle: "Supplemental Instructor",
@@ -113,8 +123,16 @@ const skills = [
     value: 70,
   },
   {
+    name: "Tecplot",
+    value: 85,
+  },
+  {
     name: "Open VSP",
     value: 90,
+  },
+  {
+    name: "Pointwise",
+    value: 75,
   },
 ];
 
@@ -141,6 +159,12 @@ const interests = [
   },
 ];
 const dataportfolio = [
+  {
+    projectTitle: "Ogive Planform DOE",
+    description:
+      "This Design of Experiments was conducted to explore the potential benifits of switching from a convential delta to an ogive delta configuration in design build fly. The leading edge of the planform was defined using a curve that is descibed in the first image below. Wing area was held constant between the runs to ensure that the nondimensionalization was consistant. A python wrapper around VORSTAB was modified to create the desired planform according to the equation. The Results of the experiment showed that true ogive configurations did not hit sufficient lift coefficients and also had a worse induced drag parameter when compared to the standard delta configuration. It was determined that the straight leading edge offered by the straight edge of the standard delta offered better performance for low Reynold's number applications and that ogive planforms have more application when dealing with wave drag / high Mach number phenomena.",
+      images: [doe0 , doe1 , doe2, doe3, doe4],
+  },
   {
     projectTitle: "Control Surface Sizing",
     description:
