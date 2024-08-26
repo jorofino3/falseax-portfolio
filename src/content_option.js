@@ -29,6 +29,11 @@ import vortex2 from "./assets/images/vortexshed2.png";
 import vortex3 from "./assets/images/vortexshed3.png";
 import vortex4 from "./assets/images/vortexshed4.png";
 import vortex5 from "./assets/images/vortexshed5.png";
+import doe0 from "./assets/images/doe_result_0.png";
+import doe1 from "./assets/images/doe_result_1.png";
+import doe2 from "./assets/images/doe_result_2.png";
+import doe3 from "./assets/images/doe_result_3.png";
+import doe4 from "./assets/images/doe_result_4.png";
 
 
 
@@ -46,7 +51,7 @@ const introdata = {
     first: "I am a Student at Georgia Tech",
     second: "I am the Co-Founder of GTSC",
     third: "I am a Team Lead at Design, Build, Fly",
-    fourth: "I love playing Guitar and Soccer",
+    fourth: "I love playing Guitar and Pickleball",
     fifth: "I enjoy learning about all things in my free time",
   },
   description:
@@ -68,6 +73,11 @@ const worktimeline = [
     jobtitle: "Micro Class Team Lead",
     where: "Georgia Tech",
     date: "August 2023 - Present",
+  },
+  {
+    jobtitle: "Research Engineer Intern",
+    where: "NASA Glenn Research Center",
+    date: "June 2024 - August 2024",
   },
   {
     jobtitle: "Supplemental Instructor",
@@ -113,8 +123,16 @@ const skills = [
     value: 70,
   },
   {
+    name: "Tecplot",
+    value: 85,
+  },
+  {
     name: "Open VSP",
     value: 90,
+  },
+  {
+    name: "Pointwise",
+    value: 75,
   },
 ];
 
@@ -142,15 +160,12 @@ const interests = [
 ];
 const dataportfolio = [
   {
-<<<<<<< HEAD
     projectTitle: "Ogive Planform DOE",
     description:
       "This Design of Experiments was conducted to explore the potential benifits of switching from a convential delta to an ogive delta configuration in design build fly. The leading edge of the planform was defined using a curve that is descibed in the first image below. Wing area was held constant between the runs to ensure that the nondimensionalization was consistant. A python wrapper around VORSTAB was modified to create the desired planform according to the equation. The Results of the experiment showed that true ogive configurations did not hit sufficient lift coefficients and also had a worse induced drag parameter when compared to the standard delta configuration. It was determined that the straight leading edge offered by the straight edge of the standard delta offered better performance for low Reynold's number applications and that ogive planforms have more application when dealing with wave drag / high Mach number phenomena.",
     images: [doe0 , doe1 , doe2, doe3, doe4],
   },
   {
-=======
->>>>>>> parent of 8adb24e (new project and skills)
     projectTitle: "Control Surface Sizing",
     description:
       "During this project. I was tasked with appropriately sizing the Vertical Stabilizer for an aircraft that we had to develop in less than two weeks. I iterated between two different design points, those being one with one vertical stabilizer, and the other being one with two outboard vertical stabilizers. The choice was made to go with one as it would save structural weight in the final design and we would get the added bonus of having the control surface being blown for additional yaw authority. Once appropriately sized, a basic Vstab was Cadded so that we could run CFD to see where the prop wash was hitting the stabilizer. We analyzed this specific point so that we could see if we would be getting any sort of passive stability from the rudder. We ended up making the Vstab tall enough so that it gave us enough passive stability to complete the mission and the initial design flew successfully. During this I also built a calculator that would take geometric parameters that we wanted for the Vstab and output coordinates that could then be put into the AVL file used to analyze the aircraft.",
