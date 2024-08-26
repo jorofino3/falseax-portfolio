@@ -163,7 +163,7 @@ const dataportfolio = [
     projectTitle: "Ogive Planform DOE",
     description:
       "This Design of Experiments was conducted to explore the potential benifits of switching from a convential delta to an ogive delta configuration in design build fly. The leading edge of the planform was defined using a curve that is descibed in the first image below. Wing area was held constant between the runs to ensure that the nondimensionalization was consistant. A python wrapper around VORSTAB was modified to create the desired planform according to the equation. The Results of the experiment showed that true ogive configurations did not hit sufficient lift coefficients and also had a worse induced drag parameter when compared to the standard delta configuration. It was determined that the straight leading edge offered by the straight edge of the standard delta offered better performance for low Reynold's number applications and that ogive planforms have more application when dealing with wave drag / high Mach number phenomena.",
-      images: [doe0 , doe1 , doe2, doe3, doe4],
+    images: [doe0 , doe1 , doe2, doe3, doe4],
   },
   {
     projectTitle: "Control Surface Sizing",
