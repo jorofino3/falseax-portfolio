@@ -89,6 +89,10 @@ const skills = [
     value: 95,
   },
   {
+    name: "Star-CCM+",
+    value: 70,
+  },
+  {
     name: "Matlab",
     value: 75,
   },
@@ -98,7 +102,7 @@ const skills = [
   },
   {
     name: "Python",
-    value: 60,
+    value: 90,
   },
   {
     name: "VORSTAB",
