@@ -34,6 +34,10 @@ import doe1 from "./assets/images/doe_result_1.png";
 import doe2 from "./assets/images/doe_result_2.png";
 import doe3 from "./assets/images/doe_result_3.png";
 import doe4 from "./assets/images/doe_result_4.png";
+import ASDL1 from "./assets/images/ASDL_workflow.png";
+import ASDL2 from "./assets/images/ASDL_interp.png";
+import ASDL3 from "./assets/images/ASDL_conv1.png";
+import ASDL4 from "./assets/images/ASDL_conv2.png";
 
 
 
@@ -123,6 +127,10 @@ const skills = [
     value: 70,
   },
   {
+    name: "Java",
+    value: 55,
+  },
+  {
     name: "Tecplot",
     value: 85,
   },
@@ -164,6 +172,12 @@ const dataportfolio = [
     description:
       "This Design of Experiments was conducted to explore the potential benifits of switching from a convential delta to an ogive delta configuration in design build fly. The leading edge of the planform was defined using a curve that is descibed in the first image below. Wing area was held constant between the runs to ensure that the nondimensionalization was consistant. A python wrapper around VORSTAB was modified to create the desired planform according to the equation. The Results of the experiment showed that true ogive configurations did not hit sufficient lift coefficients and also had a worse induced drag parameter when compared to the standard delta configuration. It was determined that the straight leading edge offered by the straight edge of the standard delta offered better performance for low Reynold's number applications and that ogive planforms have more application when dealing with wave drag / high Mach number phenomena.",
     images: [doe0 , doe1 , doe2, doe3, doe4],
+  },
+  {
+    projectTitle: "NPSS Model CFD Aircraft Trimming.",
+    description:
+      "This project was conducted as part of my research at the Aerospace Systems Design Lab (ASDL). I developed a STAR-CCM+ macro to integrate engine face boundary conditions from a simulation with a Numerical Propulsion System Simulation (NPSS) model. Additionally, I wrote a Python script to perform radial basis function interpolation on the NPSS dataset, which allowed the simulation to use continuous flow metrics (Total Temperature, Total Pressure, Mass Flow Rate) instead of being limited to discrete data points from the engine model. The simulation was run with two different residual targeting methods, adjusting engine conditions to drive the net forces on the body to zero while maintaining the correct engine boundary conditions.",
+    images: [ASDL1 , ASDL2 , ASDL3 , ASDL4],
   },
   {
     projectTitle: "Control Surface Sizing",
