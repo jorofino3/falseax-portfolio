@@ -38,6 +38,13 @@ import ASDL1 from "./assets/images/ASDL_workflow.png";
 import ASDL2 from "./assets/images/ASDL_interp.png";
 import ASDL3 from "./assets/images/ASDL_conv1.png";
 import ASDL4 from "./assets/images/ASDL_conv2.png";
+import PID_1 from "./assets/images/PID_1.png";
+import PID_2 from "./assets/images/PID_2.png";
+import PID_3 from "./assets/images/PID_3.png";
+import PID_4 from "./assets/images/PID_4.png";
+import PID_5 from "./assets/images/PID_5.png";
+import hypersonic_1 from "./assets/images/hypersonic_1.png";
+import hypersonic_2 from "./assets/images/hypersonic_2.png";
 
 
 
@@ -111,6 +118,10 @@ const skills = [
     value: 75,
   },
   {
+    name: "C++",
+    value: 60,
+  },
+  {
     name: "SolidWorks",
     value: 85,
   },
@@ -170,7 +181,7 @@ const dataportfolio = [
   {
     projectTitle: "Ogive Planform DOE",
     description:
-      "This Design of Experiments was conducted to explore the potential benifits of switching from a convential delta to an ogive delta configuration in design build fly. The leading edge of the planform was defined using a curve that is descibed in the first image below. Wing area was held constant between the runs to ensure that the nondimensionalization was consistant. A python wrapper around VORSTAB was modified to create the desired planform according to the equation. The Results of the experiment showed that true ogive configurations did not hit sufficient lift coefficients and also had a worse induced drag parameter when compared to the standard delta configuration. It was determined that the straight leading edge offered by the straight edge of the standard delta offered better performance for low Reynold's number applications and that ogive planforms have more application when dealing with wave drag / high Mach number phenomena.",
+      "This Design of Experiments was conducted to investigate the potential benefits of switching from a conventional delta to an ogive delta configuration in Design Build Fly. The leading edge of the planform was defined using a curve described in the first image below. Wing area was held constant across all runs to ensure consistent nondimensionalization. A Python wrapper around VORSTAB was modified to generate the desired planform based on the specified equation. The results showed that true ogive configurations did not achieve sufficient lift coefficients and exhibited worse induced drag parameters compared to the standard delta configuration. It was concluded that the straight leading edge of the standard delta provided better performance for low Reynolds number applications, while ogive planforms are more suited to scenarios involving wave drag or high Mach number phenomena.",
     images: [doe0 , doe1 , doe2, doe3, doe4],
   },
   {
@@ -180,16 +191,34 @@ const dataportfolio = [
     images: [ASDL1 , ASDL2 , ASDL3 , ASDL4],
   },
   {
+    projectTitle: "PID Controller Design",
+    description:
+      "The objective of this project was to make a control system that would use a rudementary brake to  maintain a target speed of a cart place on an inclined slope. The brake design consisted of an ruler attached to a hi torque servo, that would defect the ruler onto one the cart's wheels to apply a frictional force. The speed of the cart was determined by using a magnetic rotary encoder to measure the angular position of the wheel, after which physical constants determined the speed. The control logic for the cart speed came from an Arduino Uno. The initial PID gains came from a matlab simulink model of the system in which a first order system was used to approximate the behavior of the servo. Afterwards, expermintal testing was used to determine what gains would get the system to behave best. A major component of the controller was the moving average that was implemented into the encoder positinal reading. This effectively mitigated the noise coming from the encoder, which allowed for succesful computation of positional derivatives and intergration.",
+    images: [PID_1 , PID_2 , PID_3 , PID_4 , PID_5],
+  },
+  {
     projectTitle: "Control Surface Sizing",
     description:
-      "During this project. I was tasked with appropriately sizing the Vertical Stabilizer for an aircraft that we had to develop in less than two weeks. I iterated between two different design points, those being one with one vertical stabilizer, and the other being one with two outboard vertical stabilizers. The choice was made to go with one as it would save structural weight in the final design and we would get the added bonus of having the control surface being blown for additional yaw authority. Once appropriately sized, a basic Vstab was Cadded so that we could run CFD to see where the prop wash was hitting the stabilizer. We analyzed this specific point so that we could see if we would be getting any sort of passive stability from the rudder. We ended up making the Vstab tall enough so that it gave us enough passive stability to complete the mission and the initial design flew successfully. During this I also built a calculator that would take geometric parameters that we wanted for the Vstab and output coordinates that could then be put into the AVL file used to analyze the aircraft.",
+      "During this project, I was tasked with sizing the vertical stabilizer for an aircraft that we needed to develop in less than two weeks. I evaluated two design configurations: one with a single vertical stabilizer and another with two outboard vertical stabilizers. The single vertical stabilizer was ultimately chosen, as it reduced structural weight in the final design and offered the added benefit of having the control surface blown by the propeller wash for increased yaw authority. After determining the appropriate size, a basic vertical stabilizer was modeled in CAD, allowing us to run CFD simulations to analyze the prop wash's impact on the stabilizer. This analysis focused on determining whether the rudder provided any passive stability. The vertical stabilizer was designed to be tall enough to ensure sufficient passive stability for mission success, and the initial design performed well in flight tests. Additionally, I created a calculator that generated coordinate data for the vertical stabilizer based on desired geometric parameters, which could then be directly integrated into the AVL file used for aircraft analysis.",
     images: [controlEntire, controlDark, controlGraph],
   },
   {
     projectTitle: "Vortex Shedding Simulation",
     description:
-      "During This project, I ran a transient simulation of flow over a tandem cylinder arrangement. This was done using two different RANS modeling methods. The first being the k-omega turbulence model, and the second being the GEKO turbulence model. The GEKO model is a varation of the k-omega model with the freedom to change certain coefficients used in the equations. This allows for different levels of 'aggressiveness' in the prediction of flow seperation. The interesting thing about steady flow over the cylinders is that they reach a sort of steady state solution in the sense that the oscillation frequency of the vorticies being shed is near constant. This allows for the RMS values of lift coefficient and drag coefficient to be extracted. It also allows for a FFT to be performed on the system to get the characteristic frequency of the vortex shedding oscillations. With this frequency, the Strouhal number can be calculated as described below. These results were then compared with experimental data to analyze what aspects of the simulation could be improved to refine the validity of the results.",
+      "During this project, I conducted a transient simulation of flow over a tandem cylinder arrangement using two different RANS modeling methods: the k-omega turbulence model and the GEKO turbulence model. The GEKO model is a variation of the k-omega model, offering the flexibility to adjust specific coefficients within the equations, enabling different levels of 'aggressiveness' in predicting flow separation. One interesting aspect of steady flow over the cylinders is that it reaches a quasi-steady state, where the oscillation frequency of the vortices being shed remains nearly constant. This behavior allows for the extraction of RMS values for the lift and drag coefficients and enables an FFT analysis to determine the characteristic frequency of vortex shedding oscillations. Using this frequency, the Strouhal number was calculated, as described below. These results were then compared with experimental data to identify areas for improvement and enhance the validity of the simulation results.",
     images: [vortex1, vortex2, vortex3, vortex4, vortex5 ],
+  },
+  {
+    projectTitle: "Hypersonic Vehicle Trajectory Simulation",
+    description: 
+      "In this project, given the 'skipping' re-entry trajectory of a hypersonic vehicle, I used MATLAB to analyze the flight conditions, including speed and altitude, to determine the properties of the shockwaves experienced by the spacecraft. The post-shock conditions were then used to calculate the stagnation heat flux at the front of the vehicle and the heat flux at two additional points on its sides. The heating data from this trajectory was subsequently applied to size a Thermal Protection System (TPS) for the vehicle, tailored to different material selections..",
+    images: [hypersonic_1 , hypersonic_2],
+  },
+  {
+    projectTitle: "Monoplane Tail",
+    description:
+      "During this project, I used a python script that interfaced with AVL to quickly run through and analyze different configurations for a monoplane tail. The configuration that we were looking at was extremely unconventional and analyzing it was a challenge in and of itself. We needed to keep the stability of the plane within a certain range, but also keep in mind the effects of the large amount of downwash we would be getting from our wing. After correctly sizing the tail and confirming the interface of the tail with other people on the team, I developed the tail and the means of load transference between the tail and the fuselage. After the concepts were laid out I created a fully Parametrized CAD of the tail configuration in a week. This allowed us to change important dimensions that drove the construction of the tail itself such as the offset distance between the leading edge of the VStab and the torsion box. While I was making the tail I had to keep in mind our manufacturing process and also integrate tolerances into the drawings and dimensions so that we accounted for the width of the laser cutting the surfaces and also so we maintained good contact between the pieces during construction.",
+    images: [Tail1, Tail2, Tail3],
   },
   {
     projectTitle: "Heating System Physics Simulation",
@@ -228,12 +257,6 @@ const dataportfolio = [
     description:
       "During this project, I was tasked with making the landing gear for our new plane configuration. The gear needed redesign because of the bottom geometry of the planform changing. I designed the gear with the load path in mind, with the goal of distributing the load as much as possible throughout the bottom of the bulkheads in the fuselage. The Mounts to the Landing gear were also a challenge as the mounting points were at a point of curvature and needed to allow space between the mounts and the gear so that we could strengthen the Gear. Afterwards The CAD was finished, the landing gear was manufactured using a 3d printed mold and composite layup around to add bending stiffness to the structure.",
     images: [landingEntire, landingPart1, landingPart2],
-  },
-  {
-    projectTitle: "Monoplane Tail",
-    description:
-      "During this project, I used a python script that interfaced with AVL to quickly run through and analyze different configurations for a monoplane tail. The configuration that we were looking at was extremely unconventional and analyzing it was a challenge in and of itself. We needed to keep the stability of the plane within a certain range, but also keep in mind the effects of the large amount of downwash we would be getting from our wing. After correctly sizing the tail and confirming the interface of the tail with other people on the team, I developed the tail and the means of load transference between the tail and the fuselage. After the concepts were laid out I created a fully Parametrized CAD of the tail configuration in a week. This allowed us to change important dimensions that drove the construction of the tail itself such as the offset distance between the leading edge of the VStab and the torsion box. While I was making the tail I had to keep in mind our manufacturing process and also integrate tolerances into the drawings and dimensions so that we accounted for the width of the laser cutting the surfaces and also so we maintained good contact between the pieces during construction.",
-    images: [Tail1, Tail2, Tail3],
   },
   {
     projectTitle: "VSP onboarding",
