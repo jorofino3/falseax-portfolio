@@ -59,31 +59,31 @@ const meta = {
 const introdata = {
   title: "I’m Avery Truax",
   animated: {
-    first: "I am a Student at Georgia Tech",
-    second: "I am the Co-Founder of GTSC",
-    third: "I am a Team Lead at Design, Build, Fly",
-    fourth: "I love playing Guitar and Pickleball",
+    first: "I am a Georgia Tech Graduate",
+    second: "I have a bachelor's in Aerospace engineering and mathematics",
+    third: "I won the SAE Aero Design competition",
+    fourth: "I am the Co-Founder of GTSC",
     fifth: "I enjoy learning about all things in my free time",
   },
   description:
-    " I'm an Aerospace Engineering major at the Georgia Institute of Technology, where I've honed my passion for aerospace engineering over the past year. My academic journey includes three years of intensive mathematical study at the University of North Georgia, further fueling my analytical skills. \r Welcome To My Portfolio",
+    " I am a recent graduate from the Georgia Institute of Technology with a Bachelor's degree in Aerospace Engineering and Mathematics. Over the past few years, I have developed my technical and professional skills and am eager to contribute to a company that fosters both my growth as an individual and my knowledge base as an engineer. Welcome to my portfolio.",
 };
 
 const dataabout = {
   title: "A bit about my self",
   aboutme:
-    "Currently, I wear multiple hats: I lead the Design Build Fly team at Georgia Tech, where I work with a team to dive into the realm of conceptual design, flight test engineering, manufacturing, and many other disciplines. Additionally, as a Co-founder and Aerodynamics Team Lead for the Georgia Tech Supersonics Club, I have the privilege of organizing a dedicated group of engineers and enthusiasts. Here I am developing skills in the realms of Performance Analysis, Controls, Structures, and much more.  \n Beyond the world of aerospace, I find joy in my simple interests. You might find me playing my guitar, navigating disc golf courses, or perfecting my pickleball game with friends and family.",
+    "The past few years in undergrad have played a major role in shaping me as an engineer and as a leader. As the former leader of Georgia Tech’s Design Build Fly team, I gained hands-on experience in conceptual design, flight test engineering, manufacturing, and collaboration within a talented team. As a Co-founder and former Aerodynamics Team Lead for the Georgia Tech Supersonics Club, I had the privilege of organizing and mentoring a group of passionate engineers, while developing expertise in performance analysis, testing hardware, structures, and more. Outside of aerospace, I enjoy playing guitar, and spending my time with friends and family.",
 };
 const worktimeline = [
   {
     jobtitle: "Aerodynamics Team Lead",
     where: "Georgia Tech",
-    date: "August 2023 - Present",
+    date: "August 2023 - December 2024",
   },
   {
     jobtitle: "Micro Class Team Lead",
     where: "Georgia Tech",
-    date: "August 2023 - Present",
+    date: "August 2023 - December 2024",
   },
   {
     jobtitle: "Research Engineer Intern",
@@ -111,11 +111,11 @@ const skills = [
   },
   {
     name: "Star-CCM+",
-    value: 70,
+    value: 75,
   },
   {
     name: "Matlab",
-    value: 75,
+    value: 80,
   },
   {
     name: "C++",
@@ -159,22 +159,22 @@ const interests = [
   {
     title: "Computational Fluid Dynamics",
     description:
-      "I am Currently involved in undergraduate research and coursework pertaining to this field. I enjoy the whole process of creating meshes that appropriately capture the physics of the given scenario as well as interpreting and validating results.",
+      "Computational Fluid Dynamics (CFD) is one of my preferred tools for analyzing and optimizing aerodynamic designs. I take pride in the entire process—from creating meshes that accurately capture the physics of a given scenario to interpreting and validating results to ensure their reliability.",
   },
   {
     title: "Aerodynamic / Performance Analysis",
     description:
-      "I love creating wacky aircraft configurations that have unique aerodynamic characteristics and analyzing their performance traits before manufacturing ever begins.",
+      "I love creating unconventional aircraft configurations that have unique aerodynamic characteristics and analyzing their performance traits before manufacturing ever begins.",
   },
   {
     title: "Control Systems",
     description:
-      "I am new to this realm of Aerospace Engineering, but I thoroughly enjoy watching how mathematical systems translate to real life phenomenons and how we can predict the behavior of complex dynamic systems using different mathematical methods \n I hope to grow my knowledge in this field via future projects and courses.",
+      "I am new to this realm of Aerospace Engineering, but I thoroughly enjoy watching how mathematical systems translate to real life phenomenons and how we can predict the behavior of complex dynamic systems using different mathematical methods \n Through various projects, my interest in this field has only grown, and I am continuing to delve into more theory to deepen my understanding of control system design",
   },
   {
     title: "Flight Test Engineering",
     description:
-      "I love conducting performance tests on aircrafts. Having a tangible objective for the aircraft to deliver on and planning out tests to determine if the aircraft is capable is something that I love doing and find myself putting into practice frequently at DBF",
+      "I love conducting performance tests on aircrafts. Having a tangible objective for the aircraft to deliver on and planning out tests to determine if the aircraft is capable is something that I love doing and find myself putting into practice frequently at DBF. I have also found myself designing and manufacturing pieces of flight test hardware that are used to validate analysis data from low and high fidelity analysis tools.",
   },
 ];
 const dataportfolio = [
