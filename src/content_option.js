@@ -70,7 +70,7 @@ const introdata = {
 };
 
 const dataabout = {
-  title: "A bit about my self",
+  title: "A bit about me:",
   aboutme:
     "The past few years in undergrad have played a major role in shaping me as an engineer and as a leader. As the former leader of Georgia Tech’s Design Build Fly team, I gained hands-on experience in conceptual design, flight test engineering, manufacturing, and collaboration within a talented team. As a Co-founder and former Aerodynamics Team Lead for the Georgia Tech Supersonics Club, I had the privilege of organizing and mentoring a group of passionate engineers, while developing expertise in performance analysis, testing hardware, structures, and more. Outside of aerospace, I enjoy playing guitar, and spending my time with friends and family.",
 };
